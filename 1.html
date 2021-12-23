@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="B1">
+    <h1 class="t">Личный кабинет</h1>
+    <h1 class="t1">Пользователь:</h1>
+    <h1 id="active_name" class="t2"></h1>
+    <a href="3.html" class="t3">Сменить пароль</a>
+    <a href="2.html" class="t4">Выход</a>
+</div>
+</body>
+<script>
+   console.log(localStorage.getItem("active_user"))
+    document.getElementById('active_name').textContent = localStorage.getItem("active_user")
+</script>
+</html>
